@@ -6,7 +6,7 @@ var active_controls = {}
 
 function get_index_path() {
     let basepath = (new URL(document.URL)).pathname.replace(/[^/]*$/, '')
-    return '/out/index/' + basepath.slice('/out/'.length) + indextype + '.'
+    return '/index/' + basepath.slice('/'.length) + indextype + '.'
 }
 
 function set_index_type(type) {
