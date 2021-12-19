@@ -25,6 +25,8 @@ jobs:
     
     - name: Build
       run: |
+         sudo apt-get update
+         sudo apt-get install -y pandoc
          g++ -std=c++2a build.cpp -o build -lstdc++fs -fconcepts -g
          exec ./build
 
