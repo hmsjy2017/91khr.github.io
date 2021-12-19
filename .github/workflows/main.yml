@@ -28,7 +28,7 @@ jobs:
          sudo apt-get update
          sudo apt-get install -y pandoc
          g++ -std=c++2a build.cpp -o build -lstdc++fs -fconcepts -g
-         exec ./build
+         exec ./build -i -f
 
     - name: GitHub Pages
       uses: crazy-max/ghaction-github-pages@v2.0.0
